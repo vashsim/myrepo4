@@ -20,6 +20,59 @@
   <!-- Vendor stylesheets  -->
   <link rel="stylesheet" href="./css/main.css">
   <!-- Custom stylesheet -->
+  <!-- Cookie Consent -->
+    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+    cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express","palette":"light","language":"en","website_name":"http://www.offenoffice.com"});
+    });
+    </script>
+
+    <!-- Google Analytics -->
+    <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-YJSPEX3BGX"></script>
+          <script type="text/plain" cookie-consent="tracking">
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-YJSPEX3BGX');
+          </script>
+    <!-- end of Google Analytics-->
+
+    <!-- Hotjar -->
+    <!-- Hotjar Tracking Code for www.offenoffice.com -->
+    <script type="text/plain" cookie-consent="tracking">
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2257787,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!-- end of Hotjar-->
+
+    <noscript>Cookie Consent by <a href="https://www.FreePrivacyPolicy.com/free-cookie-consent/" rel="nofollow noopener">FreePrivacyPolicy.com</a></noscript>
+    <!-- End Cookie Consent -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="icon" href="http://www.offenoffice.com/favicon.ico?v=2" />
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- MailChimp -->
+    <script id="mcjs">
+    function showPopup() 
+    { 
+      !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5e1241882b487ff71ec0541ec/58f14b826f3811785f1063fa6.js");
+      //unsetting the cookie
+      document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";                  
+      document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    }
+    document.getElementById("show-popup").onclick = function() { showPopup(); }
+    </script>
 </head>
 
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
@@ -30,11 +83,11 @@
         <nav class="navbar site-navbar">
           <!-- Brand Logo-->
           <div class="brand-logo">
-            <a href="#">
+            <a href="https://www.offenoffice.com">
               <!-- light version logo (logo must be black)-->
-              <img src="image/logo/logo-black.png" alt="" class="light-version-logo">
+              <img src="image/logo/logo_offenoffice_w.png" alt="" class="light-version-logo">
               <!-- Dark version logo (logo must be White)-->
-              <img src="image/logo/logo-white.png" alt="" class="dark-version-logo">
+              <img src="image/logo/logo_offenoffice_w_3.png" alt="" class="dark-version-logo">
             </a>
           </div>
           <div class="menu-block-wrapper">
@@ -49,10 +102,7 @@
               </div>
               <ul class="site-menu-main">
                 <li class="nav-item">
-                  <a href="#" class="nav-link-item">Become a Host</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link-item">Contact us</a>
+                  <a href="#" class="nav-link-item" id="show-popup">Become a Host</a>
                 </li>
               </ul>
             </nav>
@@ -72,14 +122,14 @@
     </header>
     <!-- navbar- -->
     <!-- Hero Area -->
-    <div class="hero-area-l4 background-property" style="background: url(./image/landing-4/shutterstock_1607004748.jpg);">
+    <div class="hero-area-l4 background-property" style="background: url(./image/landing-4/shutterstock_163111289.jpg);">
       <div class="container">
         <div class="row">
           <div class="col-xl-10 col-lg-11 col-md-12" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <div class="banner-content">
               <div class="content">
                 <h2>Work. Live. Relax.</h2>
-                <p>Explore, rent & share inspiring accommodations ready for home-office<br class="d-none d-sm-block"> & flexible workspaces for remote-working.
+                <p>Explore, rent & share inspiring accommodations ready for <br class="d-none d-sm-block">home-office & flexible workspaces for remote-working.
                 </p>
               </div>
             </div>
@@ -196,7 +246,7 @@
             <div class="content-l4-content-1">
               <div class="section__heading-2">
                 <h2>Easy, Reliable & Transparent</h2>
-                <p>One view tells everything!<br>Our 5-star grading for all the listings on our platform will help you find the most suitable workspace for all your needs, in a single glance.</p>
+                <p>One view tells everything!<br>Our 5-star grading for all the listings on our platform will help you find the most suitable workspace for all your needs.</p>
               </div>
             </div>
           </div>
@@ -212,11 +262,8 @@
         <div class="row justify-content-center">
           <div class="col-xxl-8 col-xl-9 col-lg-10" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <div class="testimonial-l4-content d-flex">
-              <div class="quote-icon">
-                <img src="image/landing-4/quote.png" alt="image">
-              </div>
               <div class="content-box">
-                <h3>All our accommodations & private home-offices are personally verified & graded by us.</h3>
+                <h2>"All our accommodations & private home-offices are personally verified & graded by us."</h2>
               </div>
             </div>
           </div>
@@ -229,19 +276,19 @@
           </div>
           <div class="col-lg-5 col-md-10" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <div class="cta-l4-content section__heading">
-              <p>We're working very hard to add all the inspiring workplaces for you! If you'd like us to send you a reminder when we're ready & get notified of new listings, do sign-up now.</p>
+              <p>If you'd like us to send you a reminder when we're ready & get notified of new listings, sign-up now.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-10" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
             <div class="cta-l4-btn text-lg-end">
-              <a href="#" class="btn btn-style-04 focus-reset">Yes, Keep me posted!</a>
+              <a href="#" class="btn btn-style-04 focus-reset" id="show-popup">Yes, Keep me posted!</a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Content Area-1  -->
-    <div class="content-area-l4-1">
+    <div class="content-area-l4-1" id="host">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-5 col-md-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
@@ -271,13 +318,13 @@
               <h2>Share your<br>Home-office space & start earning.</h2>
               <p>Are you aware that an available home-office setup offers a high added value to your property and increases your revenue?<br><br>Also, if your home-office space is currently not in use, you can share it with individuals & earn money from it.</p>
               <div class="l4-learn-btn">
-                <a href="#" class="btn btn-style-04 focus-reset">Get Started Now</a>
+                <a href="#" class="btn btn-style-04 focus-reset" id="show-popup">Get Started Now</a>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-10" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
             <div class="contant-area-2-l4-content-image">
-              <img class="w-100" src="image/landing-4/beazy-Qs-dJxLHLTg-unsplash.jpg" alt="image">
+              <img class="w-100" src="image/landing-4/michael-descharles-1f_lBHJvY7c-unsplash.jpg" alt="image">
             </div>
           </div>
         </div>
@@ -308,6 +355,8 @@
               <button class="btn btn-style-04 focus-reset">Submit</button>
             </div>
           </form>
+          <div>
+          </div>
         </div>
       </div>
     </div>
@@ -319,9 +368,8 @@
             <div class="footer-l4-block">
               <h3>VISIT US</h3>
               <ul class="list-unstyled footer-social-icon-l4">
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/offenoffice"><i class="fab fa-linkedin-in"></i></a></li>  
+                <li><a href="https://www.instagram.com/offenoffice/"><i class="fab fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
@@ -349,7 +397,8 @@
         </div>
         <div class="row justify-content-center copyright-area-l4">
           <div class="col-xl-12 col-lg-10">
-            <p>© 2021 OffenOffice. All Rights Reserved.</p>
+            <p>© 2021 OffenOffice. All Rights Reserved.
+              <a href="https://www.offenoffice.com/terms-and-conditions.html" style="cursor: pointer;"> Terms of Use   |</a><a href="https://www.offenoffice.com/terms-and-conditions.html" style="cursor: pointer;">   Privacy Policy   |</a><a href="https://www.offenoffice.com/terms-and-conditions.html" style="cursor: pointer;">   Imprint   |</a><a href="mailto:information@offenoffice.com" style="cursor: pointer;">  Contact Us</a></p>
           </div>
         </div>
       </div>
@@ -357,6 +406,8 @@
   </div>
   <!-- Vendor Scripts -->
   <script src="js/vendor.min.js"></script>
+  <script src="js/jquery.scrolly.min.js"></script>
+  <script src="js/jquery.scrollex.min.js"></script>
   <!-- Plugin's Scripts -->
   <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
   <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
