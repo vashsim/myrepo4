@@ -267,3 +267,17 @@ $(document).ready(function() {
 
 
 });
+
+// Scrolly.
+        $('.scrolly').scrolly({
+            offset: function() {
+                return $header.outerHeight() - 2;
+            }
+        });
+
+        $('.scrolly-middle').scrolly({
+            anchor: 'middle',
+            offset: function() {
+                return $header.outerHeight() - 2;
+            }
+        });
