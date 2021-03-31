@@ -212,16 +212,17 @@ div#loading img {
 }
 
 .preloader {
-  display: flex;
+  display:block;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
+  object-fit: cover;
   background-color: #ffffff !important;
 }
 
 .preloader img {
-  width: 200px;
+  width: 100%;
 }
 
 /*Header Css StaRT*/
@@ -1088,7 +1089,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .sticky-menu-bg.reveal-header {
-  background: #0859c6 !important;
+  background: #3494fc !important;
 }
 
 .sticky-menu-bg.reveal-header .nav-link-item {
