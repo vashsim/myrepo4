@@ -64,6 +64,16 @@
     <link rel="manifest" href="/site.webmanifest">
     <!-- MailChimp -->
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5e1241882b487ff71ec0541ec/58f14b826f3811785f1063fa6.js");</script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+    <script>
+    function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us7.list-manage.com","uuid":"5e1241882b487ff71ec0541ec","lid":"eea2de931d"}) })
+        document.cookie = “MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC”;
+    };
+
+    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+    </script>
 </head>
 
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
@@ -147,7 +157,7 @@
           <div class="col-lg-6 col-md-7" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <div class="content-l4-content-1">
               <div class="section__heading-2">
-                <h2>Find <span style="background-color:#46EDBC; color:#fff">beautiful</span> accomodations <span style="background-color:#46EDBC; color:#fff">ready</span> for Home-office.</h2>
+                <h2>Find <span style="background-color:#4094ff; color:#fff">beautiful</span> accomodations <span style="background-color:#4094ff; color:#fff">ready</span> for Home-office.</h2>
                 <p>Take a break from your daily routine & work from an exotic location!<br>Simply check-in & start working, without any worries.</p>
               </div>
             </div>
@@ -165,7 +175,7 @@
           <div class="col-lg-6 col-md-7" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             <div class="content-l1-content-1">
               <div class="section__heading-2">
-                <h2>Discover <span style="background-color:#46EDBC; color:#fff">private</span><br>Home-offices in your <span style="background-color:#46EDBC; color:#fff">Locale.</span></h2>
+                <h2>Discover <span style="background-color:#4094ff; color:#fff">private</span><br>Home-offices in your <span style="background-color:#4094ff; color:#fff">Locale.</span></h2>
                 <p>Time to say no to the distractions while working from home.<br>Find & rent affordable private home-offices next-door.</p>
               </div>
             </div>
@@ -187,7 +197,7 @@
         <div class="row">
           <div class="offset-xxl-2 col-xxl-5 offset-xl-2 col-xl-6 col-lg-8" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <div class="service-l4-head-content section__heading-2">
-              <h2>We <span style="background-color:#46EDBC; color:#fff">Guarantee</span> you 100% Ease of Working.</h2>
+              <h2>We <span style="background-color:#4094ff; color:#fff">Guarantee</span> you 100% Ease of Working.</h2>
               <p>If you want to combine work and vacation or work from another location, it's important that everything works perfectly.</p>
             </div>
           </div>
@@ -257,7 +267,7 @@
           <div class="col-xxl-8 col-xl-9 col-lg-10" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <div class="testimonial-l4-content d-flex">
               <div class="content-box">
-                <h2>"All our accommodations & private home-offices are <span style="background-color:#46EDBC; color:#fff">personally</span> verified & graded by us."</h2 >
+                <h2>"All our accommodations & private home-offices are <span style="background-color:#4094ff; color:#fff">personally</span> verified & graded by us."</h2 >
               </div>
             </div>
           </div>
@@ -265,7 +275,7 @@
         <div class="row cta-l4-items justify-content-center align-items-center text-center text-lg-start">
           <div class="col-lg-4 col-md-10" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
             <div class="cta-l4-heading section__heading">
-              <h2>Get <span style="background-color:#46EDBC; color:#fff">started</span> with us, today!</h2>
+              <h2>Get <span style="background-color:#4094ff; color:#fff">started</span> with us, today!</h2>
             </div>
           </div>
           <div class="col-lg-5 col-md-10" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
@@ -275,7 +285,7 @@
           </div>
           <div class="col-lg-3 col-md-10" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
             <div class="cta-l4-btn text-lg-end">
-              <a href="#" class="btn btn-style-04 focus-reset" id="show-popup">Yes, Keep me posted!</a>
+              <a class="btn btn-style-04 focus-reset" id=”open-popup”>Yes, Keep me posted!</a>
             </div>
           </div>
         </div>
@@ -312,7 +322,7 @@
               <h2><span style="background-color:#4094ff; color:#fff">Share</span> your<br>Home-office space & <span style="background-color:#4094ff; color:#fff">start earning.</span></h2>
               <p>Are you aware that an available home-office setup offers a high added value to your property and increases your revenue?<br><br>Also, if your home-office space is currently not in use, you can share it with individuals & earn money from it.</p>
               <div class="l4-learn-btn">
-                <a href="#" class="btn btn-style-04 focus-reset" id="show-popup">Get Started Now</a>
+                <a class="btn btn-style-04 focus-reset" id=”open-popup”>Get Started Now</a>
               </div>
             </div>
           </div>
@@ -339,20 +349,21 @@
           </div>
         </div>  
         <div class="contact-form-l4">
-          <form action="#">
+          <form action="https://offenoffice.us7.list-manage.com/subscribe/post?u=5e1241882b487ff71ec0541ec&amp;id=eea2de931d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="combined" target="_blank" novalidate>
             <div class="d-sm-flex  name-email-area justify-content-between">
               <div class="form-group">
-                <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
+                <input type="email" name="email" id="mce-EMAIL" class="form-control" placeholder="Your Email">
               </div>
             </div>
             <div class="send-btn">
-              <button class="btn btn-style-04 focus-reset">Submit</button>
+              <button class="btn btn-style-04 focus-reset" id="mc-embedded-subscribe">Submit</button>
             </div>
           </form>
-          <div>
-          </div>
-        </div>
+        <div>
+          <p><i><br>By clicking on submit, you acknowledge that your information will be transferred to Mailchimp for processing. Learn more about Mailchimp's privacy practices <a href="https://mailchimp.com/legal/" target="_blank">here.</a><br>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit <a href="https://www.offenoffice.com/terms-and-conditions.html" target="_blank">our privacy policy.</a> We use Mailchimp as our marketing platform.</i></p>
       </div>
+    </div>
+  </div>
     </div>
     <!-- Footer Area -->
     <footer class="footer-area-l4 bg-ebony position-relative">
@@ -370,20 +381,18 @@
           <div class="offset-xxl-1 col-xxl-5 col-xl-5 col-lg-10" id="contact">
             <h3>GET IN CONTACT</h3>
             <div class="contact-form-l4">
-              <form action="#">
+              <form action="https://offenoffice.us7.list-manage.com/subscribe/post?u=5e1241882b487ff71ec0541ec&amp;id=eea2de931d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div class="d-sm-flex  name-email-area justify-content-between">
                   <div class="form-group">
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Full name">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                    <input type="email" name="email" id="mce-EMAIL" class="form-control" placeholder="Email">
                   </div>
                 </div>
                 <div class="form-group">
-                  <textarea id="message" class="form-control" placeholder="Message"></textarea>
+                  <textarea id="mce-MMERGE1" class="form-control" placeholder="Message"></textarea>
                 </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div class="send-btn">
-                  <button class="btn btn-style-04 focus-reset">send</button>
+                  <button class="btn btn-style-04 focus-reset" id="mc-embedded-subscribe">send</button>
                 </div>
               </form>
             </div>
